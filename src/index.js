@@ -3,7 +3,6 @@ import SimpleLightbox from 'simplelightbox';
 import 'simplelightbox/dist/simple-lightbox.min.css';
 import { createMarkup, resetGallery } from './js/markUp';
 import ImageFetchApi from './js/fetch';
-// import OnlyScroll from 'only-scrollbar';
 
 let lightbox = new SimpleLightbox('.photo-card a', {
   captions: true,
@@ -87,7 +86,7 @@ function scrollSmoothly() {
     .firstElementChild.getBoundingClientRect();
 
   window.scrollBy({
-    top: cardHeight * 4,
+    top: cardHeight * 2,
     behavior: 'smooth',
   });
 }
